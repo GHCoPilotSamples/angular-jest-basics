@@ -22,6 +22,7 @@
     "@angular/router": "~12.2.0",
     "lodash-es": "^4.17.21",
     "rxjs": "~6.6.0",
+    "source-map": "^0.7.4",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
