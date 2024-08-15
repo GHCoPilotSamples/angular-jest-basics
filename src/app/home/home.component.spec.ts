@@ -8,7 +8,7 @@ import { HomeService } from './home.service';
 
 const testData = [
   {
-    name: 'trull',
+    name: 'trulli',
     image: 'pic_trulli.jpg',
     alt: 'Italian Trulli',
   },
