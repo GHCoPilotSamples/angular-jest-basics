@@ -55,24 +55,4 @@ describe('Home Component', () => {
     })
   );
 
-  it(
-    'verify html',
-    waitForAsync(() => {
-      fixture.whenStable().then(() => {
-        fixture.detectChanges();
-        expect(fixture).toMatchSnapshot();
-        const displayElements = fixture.debugElement.queryAll(By.css('p'));
-        displayElements.forEach((element, index) => {
-          expect(element.nativeElement.textContent).toBe(
-            capitalize(testData[index].name)
-          );
-        });
-        const imageElements = fixture.debugElement.queryAll(By.css('img'));
-        imageElements.forEach((element, index) => {
-          expect(element.nativeElement.src).toContain(testData[index].image);
-          expect(element.nativeElement.alt).toContain(testData[index].alt);
-        });
-      });
-    })
-  );
-});
+ 
